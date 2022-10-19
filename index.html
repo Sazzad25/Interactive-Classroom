@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Interactive Classroom</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Classroom</a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#courses">Courses</a>
+         <a href="#teachers">Teachers</a>
+         <a href="#contact">Contact</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="row">
+
+      <div class="content">
+         <h3>Interactive <span>Classroom</span></h3>
+         <a href="#contact" class="btn">contact us</a>
+      </div>
+
+      <div class="image">
+         <img src="" alt="">
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- courses section starts  -->
+
+<section class="courses" id="courses">
+
+   <h1 class="heading">Our <span>Courses</span></h1>
+
+   <div class="swiper course-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <img src="" alt="">
+            <h3>Software Engineering</h3>
+            <p>Details</p>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="" alt="">
+            <h3>Communication Engineering</h3>
+            <p>Details</p>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="" alt="">
+            <h3>Database Management and System</h3>
+            <p>Details</p>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/course-4.svg" alt="">
+            <h3>Microprocessor</h3>
+            <p>Details</p>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="" alt="">
+            <h3>Statistics</h3>
+            <p>Details</p>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="" alt="">
+            <h3>Computer NetWorking</h3>
+            <p>Details</p>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- courses section ends -->
+
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading"><span>contact</span> us</h1>
+
+   <div class="row">
+
+      <div class="">
+         <img src="">
+      </div>
+
+      <form action="" method="post">
+         <span>your name</span>
+         <input type="text" required placeholder="enter your full name" maxlength="50" name="name" class="box">
+         <span>your email</span>
+         <input type="email" required placeholder="enter your valie email" maxlength="50" name="email" class="box">
+         <span>your number</span>
+         <input type="number" required placeholder="enter your valie number" max="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length == 10) return false;">
+         <span>select course</span>
+         <select name="courses" class="box" required>
+            <option value="" disabled selected>select the course --</option>
+            <option value="software engineering">Software Engineering</option>
+            <option value="communication engineering">Communication Engineering</option>
+            <option value="database management and system">Database Management and System</option>
+            <option value="microprocessor">Microprocessor</option>
+            <option value="computer graphics">Computer Graphics</option>
+            <option value="statistic">Statistics</option>
+            <option value="social studies">Compiler</option>
+            <option value="computer networking">Computer NetWorking</option>
+            <option value="artificial intelligence">Artificial Intelligence</option>
+         </select>
+         <span>select gender</span>
+         <div class="radio">
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">female</label>
+         </div>
+         <input type="submit" value="send message" class="btn" name="send">
+      </form>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+</body>
+</html>
